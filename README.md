@@ -1,4 +1,4 @@
-# Invoice Generator App
+# Invoice Generator App For Super Market 
 
 <p>
   <img src="https://github.com/user-attachments/assets/a3e172dd-6279-4e6c-82ab-87250a01ded5"height="35%" width="22%">
