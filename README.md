@@ -13,7 +13,7 @@
 </p>
 
 ## Description:
-Streamline your supermarket’s billing process with our user-friendly Invoice Generator App, designed specifically for grocery stores. This app simplifies the creation and management of invoices, helping you save time and reduce errors.
+Streamline your star market’s billing process with our user-friendly Invoice Generator App, designed specifically for grocery stores. This app simplifies the creation and management of invoices, helping you save time and reduce errors.
 
 ## Key Features:
 
@@ -21,7 +21,7 @@ Streamline your supermarket’s billing process with our user-friendly Invoice G
 - Intuitive design allows staff to generate invoices quickly, even with minimal training.
 
 ### 2. Customizable Templates: 
-- Choose from various invoice templates tailored for supermarkets, including branding options to reflect your store’s identity.
+- Choose from various invoice templates tailored for star markets, including branding options to reflect your store’s identity.
 
 ### 3. Real-Time Inventory Integration: 
 - Sync with your inventory management system to automatically update product availability and pricing, ensuring accurate billing.
@@ -54,4 +54,4 @@ Streamline your supermarket’s billing process with our user-friendly Invoice G
 - Better Customer Engagement: Stay connected with customers through digital receipts and personalized offers.
 - Data-Driven Insights: Utilize analytics to optimize product offerings and sales strategies.
 
-Elevate your supermarket’s invoicing process and enhance customer satisfaction with our Invoice Generator App. Transform your billing experience today!
+Elevate your star market’s invoicing process and enhance customer satisfaction with our Invoice Generator App. Transform your billing experience today!
