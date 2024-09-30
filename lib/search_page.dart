@@ -29,7 +29,7 @@ class _SearchPageState extends State<SearchPage> {
         elevation: 5,
         title: const Text(
           "Search Your Product",
-          style: TextStyle(color: Colors.white, fontSize: 17),
+          style: TextStyle(color: Colors.white, fontSize: 17,fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(

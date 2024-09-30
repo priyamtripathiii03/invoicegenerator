@@ -32,7 +32,7 @@ Future<Uint8List> pdfGeneratore() async {
             pw.Text('Address : ${txtAddress.text}'),
             pw.Divider(),
             pw.Text(
-              'Prodcut Detail',
+              'Product Detail',
               style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 14),
             ),
             ...List.generate(

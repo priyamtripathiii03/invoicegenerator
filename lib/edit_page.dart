@@ -20,7 +20,7 @@ class _EditPageState extends State<EditPage> {
         ),
         centerTitle: true,
         title: const Text(
-          "Card Page",
+          "Cart Page",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.w800, fontSize: 18),
         ),
