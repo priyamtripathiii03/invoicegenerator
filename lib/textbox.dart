@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField TextForCilent(
+TextField textForCilent(
     {required String hint, required controller,
       required bool isPhone,
       required bool isAddress,
@@ -9,7 +9,7 @@ TextField TextForCilent(
     }) {
 
   return TextField(
-    keyboardType: isNumber ? TextInputType.numberWithOptions() : TextInputType.text,
+    keyboardType: isNumber ? const TextInputType.numberWithOptions() : TextInputType.text,
     controller:controller,
 
     maxLines: isAddress ? 4 : 1,

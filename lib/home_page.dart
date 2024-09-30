@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:invoicegenerator/textbox.dart';
 import 'global.dart';
 
 class HomePage extends StatefulWidget {
@@ -30,15 +28,15 @@ class _HomepageState extends State<HomePage> {
         actions: [
           IconButton(onPressed: () {
             Navigator.of(context).pushNamed('/edit');
-          }, icon: Icon(Icons.shopping_cart_outlined,color: Colors.white,),),
+          }, icon: const Icon(Icons.shopping_cart_outlined,color: Colors.white,),),
           IconButton(onPressed: () {
             Navigator.of(context).pushNamed('/search');
-          }, icon:Icon( Icons.search,color: Colors.white,),)
+          }, icon:const Icon( Icons.search,color: Colors.white,),)
         ],
         backgroundColor: Colors.blue,
         centerTitle: true,
         title: const Text(
-          'Home',
+          'Star Market',
           style: TextStyle(
               color: Colors.white,
               letterSpacing: 1,
@@ -49,31 +47,37 @@ class _HomepageState extends State<HomePage> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 10),
-            margin: EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.only(top: 10),
+            margin: const EdgeInsets.only(top: 10),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: categories
-                    .map(
-                      (category) => FilterChip(
-                    selected: selectedCategories.contains(category),
-                    label: Text(category),
-                    onSelected: (selected) {
-                      setState(
-                            () {
-                          if (selected) {
-                            selectedCategories.add(category);
-                          } else {
-                            selectedCategories.remove(category);
-                          }
-                        },
-                      );
-                    },
-                  ),
-                )
-                    .toList(),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: categories
+                      .map(
+                        (category) => Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: FilterChip(
+                                                selected: selectedCategories.contains(category),
+                                                label: Text(category),
+                                                onSelected: (selected) {
+                          setState(
+                                () {
+                              if (selected) {
+                                selectedCategories.add(category);
+                              } else {
+                                selectedCategories.remove(category);
+                              }
+                            },
+                          );
+                                                },
+                                              ),
+                        ),
+                  )
+                      .toList(),
+                ),
               ),
             ),
           ),
@@ -84,24 +88,24 @@ class _HomepageState extends State<HomePage> {
                 final product = filterProducts[index];
                 return Card(
                   elevation: 8.0,
-                  margin: EdgeInsets.all(8.0),
+                  margin: const EdgeInsets.all(8.0),
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                     ),
                     child: ListTile(
                       contentPadding:
-                      EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                       leading: Image(
                         image: AssetImage(product.img.toString()),
                       ),
                       title: Text(
                         product.name.toString(),
-                        style: TextStyle(color: Colors.grey),
+                        style: const TextStyle(color: Colors.black),
                       ),
                       subtitle: Text(
                         product.price.toString(),
-                        style: TextStyle(color: Colors.grey),
+                        style: const TextStyle(color: Colors.grey),
                       ),
                       trailing: GestureDetector(
                         onTap: () {

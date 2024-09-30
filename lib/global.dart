@@ -345,7 +345,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Burger',
       price: 25.79,
-      img: 'assets/img/Burger.jpeg',
+      img: 'assets/img/bur.jpg',
       category: 'Food',
       discount: 5,
       id: 43,
@@ -361,7 +361,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Pizza',
       price: 58.36,
-      img: 'assets/img/Pizza.jpeg',
+      img: 'assets/img/pi.jpg',
       category: 'Food',
       discount: 25,
       id: 45,
@@ -377,7 +377,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Sandwich',
       price: 85.38,
-      img: 'assets/img/sandwich.jpeg',
+      img: 'assets/img/san.jpeg',
       category: 'Food',
       discount: 5,
       id: 47,
@@ -385,7 +385,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'MOMOS',
       price: 50.32,
-      img: 'assets/img/MOMs.jpeg',
+      img: 'assets/img/mo.jpeg',
       category: 'Food',
       discount: 2,
       id: 48,
@@ -393,7 +393,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Pasta',
       price: 101.32,
-      img: 'assets/img/pasta.jpeg',
+      img: 'assets/img/pas.jpg',
       category: 'Food',
       discount: 9,
       id: 49,
@@ -401,7 +401,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Pani Puri',
       price: 10.32,
-      img: 'assets/img/panipuri.jpg',
+      img: 'assets/img/pan.jpeg',
       category: 'Food',
       discount: 9,
       id: 50,
@@ -409,7 +409,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Strawberries',
       price: 90.00,
-      img: 'assets/img/Strawberry.jpg',
+      img: 'assets/img/strawberry.jpg',
       category: 'Fruits',
       discount: 50,
       id: 51,
@@ -417,7 +417,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Mango',
       price: 120.00,
-      img: 'assets/img/MAngo.jpeg',
+      img: 'assets/img/mango.jpg',
       category: 'Fruits',
       discount: 20,
       id: 52,
@@ -425,7 +425,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Orange',
       price: 70.17,
-      img: 'assets/img/Orange.jpeg',
+      img: 'assets/img/orange.jpeg',
       category: 'Fruits',
       discount: 5,
       id: 53,
@@ -433,7 +433,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'WaterMelon',
       price: 50.17,
-      img: 'assets/img/WaterMelon.jpeg',
+      img: 'assets/img/watermelon.jpeg',
       category: 'Fruits',
       discount: 2,
       id: 54,
@@ -441,7 +441,7 @@ List<ProductModal> productList = [
   ProductModal(
       name: 'Cherries',
       price: 20.00,
-      img: 'assets/img/Cherry.jpeg',
+      img: 'assets/img/che.jpeg',
       category: 'Fruits',
       discount: 8,
       id: 55,

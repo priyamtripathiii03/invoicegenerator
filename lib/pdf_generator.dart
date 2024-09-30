@@ -8,16 +8,16 @@ Future<Uint8List> pdfGeneratore() async {
   pdf.addPage(
     pw.Page(
       margin: pw.EdgeInsets.zero,
-      pageFormat: PdfPageFormat(300, 500),
-      build: (Context) => pw.Padding(
-        padding: pw.EdgeInsets.all(8),
+      pageFormat: const PdfPageFormat(300, 500),
+      build: (context) => pw.Padding(
+        padding: const pw.EdgeInsets.all(8),
         child: pw.Column(
           crossAxisAlignment: pw.CrossAxisAlignment.start,
           children: [
             pw.Align(
               alignment: pw.Alignment.center,
               child: pw.Text(
-                'Tax Invoice',
+                'Star Market',
                 style:
                     pw.TextStyle(fontSize: 25, fontWeight: pw.FontWeight.bold),
               ),

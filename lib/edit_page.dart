@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'global.dart';
 
@@ -33,21 +32,21 @@ class _EditPageState extends State<EditPage> {
               showItemsList.length,
               (index) => Card(
                 elevation: 8.0,
-                margin: EdgeInsets.all(8.0),
+                margin: const EdgeInsets.all(8.0),
                 child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: ListTile(
                     contentPadding:
-                        EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     title: Text(
                       showItemsList[index].name.toString(),
-                      style: TextStyle(color: Colors.black),
+                      style: const TextStyle(color: Colors.black),
                     ),
                     subtitle: Text(
                       showItemsList[index].price.toString(),
-                      style: TextStyle(color: Colors.grey),
+                      style: const TextStyle(color: Colors.grey),
                     ),
                     trailing: SizedBox(
                       width: 160,
@@ -66,21 +65,21 @@ class _EditPageState extends State<EditPage> {
                                     setState(() {
                                       addItems[index].quantity--;
                                       addItems.remove(showItemsList[index]);
-                                      if (addItems[index].quantity > 1) {
+                                      if (addItems[index].quantity == 0) {
                                         showItemsList
                                             .remove(showItemsList[index]);
                                       }
                                     });
                                   },
-                                  icon: Icon(Icons.remove),
+                                  icon: const Icon(Icons.remove),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Text(
                                   addItems[index].quantity.toString(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Colors.black, fontSize: 18),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {
                                     setState(() {
@@ -88,12 +87,12 @@ class _EditPageState extends State<EditPage> {
                                       addItems.add(showItemsList[index]);
                                     });
                                   },
-                                  icon: Icon(Icons.add),
+                                  icon: const Icon(Icons.add),
                                 ),
                               ],
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {
                               setState(() {
@@ -101,7 +100,7 @@ class _EditPageState extends State<EditPage> {
                                 addItems.remove(addItems[index]);
                               });
                             },
-                            icon: Icon(Icons.delete_outline),
+                            icon: const Icon(Icons.delete_outline),
                           ),
                         ],
                       ),
@@ -128,8 +127,8 @@ class _EditPageState extends State<EditPage> {
             ),
             child: Center(
               child: Text(
-                '${payment()} pay',
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                '${payment().toInt()} pay',
+                style: const TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),
           ),

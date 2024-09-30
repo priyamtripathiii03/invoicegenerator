@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:invoicegenerator/add_page.dart';
 import 'package:invoicegenerator/edit_page.dart';
 import 'package:invoicegenerator/home_page.dart';
+import 'package:invoicegenerator/pdf_view.dart';
 import 'package:invoicegenerator/search_page.dart';
 import 'package:invoicegenerator/splash_screen.dart';
 
@@ -17,11 +18,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => SplashScreen(),
-        '/add': (context) => AddPage(),
-        '/home': (context) => HomePage(),
-        '/edit': (context) => EditPage(),
-        '/search': (context) => SearchPage(),
+        '/': (context) => const SplashScreen(),
+        '/add': (context) => const AddPage(),
+        '/home': (context) => const HomePage(),
+        '/search': (context) => const SearchPage(),
+        '/edit': (context) => const EditPage(),
+        '/PDF': (context) => const PdfView(),
+
       },
     );
   }

@@ -12,9 +12,9 @@ class _SplashScreen extends State<SplashScreen> {
   @override
 
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 2),
+    Timer(const Duration(seconds: 2),
           () {
-        Navigator.of(context).pushReplacementNamed('/home');
+        Navigator.of(context).pushReplacementNamed('/add');
       },
     );
     return Scaffold(
@@ -31,7 +31,7 @@ class _SplashScreen extends State<SplashScreen> {
                   shape: BoxShape.circle,
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage('assets/logo.png'),
+                    image: AssetImage('assets/img/logo.png'),
                   )
               ),
             ),

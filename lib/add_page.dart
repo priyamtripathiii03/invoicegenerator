@@ -15,10 +15,11 @@ class _AddPageState extends State<AddPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         shadowColor: Colors.black,
         elevation: 8,
-        title: Text(
-          'Add page',
+        title: const Text(
+          'Customer Details',
           style: TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),
@@ -32,7 +33,7 @@ class _AddPageState extends State<AddPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Client 1',
+                    'Customer 1',
                     style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                   Padding(
@@ -66,7 +67,7 @@ class _AddPageState extends State<AddPage> {
                   padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
                   child: Column(
                     children: [
-                      TextForCilent(
+                      textForCilent(
                           hint: 'Priyam Tripathi',
                           isPhone: false,
                           isAddress: false,
@@ -75,7 +76,7 @@ class _AddPageState extends State<AddPage> {
                           controller: txtName),
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
-                        child: TextForCilent(
+                        child: textForCilent(
                             hint: '9876543210',
                             isPhone: true,
                             isAddress: false,
@@ -85,7 +86,7 @@ class _AddPageState extends State<AddPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
-                        child: TextForCilent(
+                        child: textForCilent(
                             hint: 'priyamtripathiii03@gmail.com',
                             isPhone: false,
                             isAddress: false,
@@ -95,7 +96,7 @@ class _AddPageState extends State<AddPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
-                        child: TextForCilent(
+                        child: textForCilent(
                             hint:
                                 '262, Ram Nagar, Pandesara, Surat, Gujarat, India',
                             isPhone: true,
@@ -116,7 +117,7 @@ class _AddPageState extends State<AddPage> {
         onPressed: () {
           Navigator.of(context).pushNamed('/home');
         },
-        child: const Icon(CupertinoIcons.add),
+        child: const Icon(Icons.navigate_next),
       ),
     );
   }

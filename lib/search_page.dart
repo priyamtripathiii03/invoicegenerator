@@ -58,7 +58,7 @@ class _SearchPageState extends State<SearchPage> {
                       ...List.generate(
                         productList.length,
                         (index) => ListTile(
-                          contentPadding: EdgeInsets.symmetric(
+                          contentPadding: const EdgeInsets.symmetric(
                               horizontal: 10, vertical: 10),
                           leading: Image(
                             image:
@@ -66,11 +66,11 @@ class _SearchPageState extends State<SearchPage> {
                           ),
                           title: Text(
                             productList[index].name.toString(),
-                            style: TextStyle(color: Colors.black),
+                            style: const TextStyle(color: Colors.black),
                           ),
                           subtitle: Text(
                             productList[index].price.toString(),
-                            style: TextStyle(color: Colors.grey),
+                            style: const TextStyle(color: Colors.grey),
                           ),
                           trailing: GestureDetector(
                             onTap: () {
