@@ -12,6 +12,8 @@
      <img src="https://github.com/user-attachments/assets/124b4c86-b93a-4b0b-b416-0bff00ab3b2b"height="35%" width="22%">
 </p>
 
+https://github.com/user-attachments/assets/47b4b77e-db01-4d28-a720-41924d6b0aef
+
 ## Description:
 Streamline your star market’s billing process with our user-friendly Invoice Generator App, designed specifically for grocery stores. This app simplifies the creation and management of invoices, helping you save time and reduce errors.
 
